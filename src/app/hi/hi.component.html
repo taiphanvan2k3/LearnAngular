@@ -1,1 +1,31 @@
-<p>hi works!</p>
+<p>{{user.name}} - {{user.age}}</p>
+
+<div>
+    <!-- Cách dùng Data binding -->
+    <!-- Cách dưới đây sẽ tạo ra nội dung HTML là:
+    <input type='text' value='Phan Văn Tài'/> -->
+    <input type="text" [value]="user.name" />
+
+    <!-- Cách dùng string interpolation -->
+    <input type="text" value="{{user.name}}" />
+
+    <!-- Sử dụng event binding -->
+    <button type="button" (click)="handler()">Click me</button>
+</div>
+
+<!-- Binding 2 chiều -->
+<div>
+    <input type="text" [(ngModel)]="username" />
+    <input type="text" [(ngModel)]="password" />
+    <button type="button" (click)="login()">Login</button>
+</div>
+
+<div>
+    <input type="text" [ngModel]="test1" (change)="onInputChange($event)" />
+    <button type="button" (click)="testButtonClick()">Click to test</button>
+</div>
+
+<div>
+    <input type="text" [ngModel]="test2" (ngModelChange)="onTestChange($event)" />
+    <button type="button" (click)="testButtonClick()">Click to test v2</button>
+</div>

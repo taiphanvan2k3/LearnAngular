@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { HiComponent } from './hi/hi.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HiComponent } from './hi/hi.component';
     HiComponent
   ],
   imports: [
-    BrowserModule
+    // Dùng FormsModule để thực hiện binding 2 chiều
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
