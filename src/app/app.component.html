@@ -1,1 +1,7 @@
-<app-ng-for-example [users]="users" [tags]="tags"></app-ng-for-example>
+<div style="margin-bottom: 10px;">
+    <button (click)="isWarning = !isWarning">Toggle warning</button>
+    <button (click)="isDanger = !isDanger" style="margin-left: 10px">Toggle danger</button>
+</div>
+<app-box-component [isDanger]="isDanger" [isWarning]="isWarning"></app-box-component>
+<p [style.fontSize]="'20px'" [style.]>isDanger: {{isDanger}}</p>
+<p>isWarning: {{isWarning}}</p>

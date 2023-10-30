@@ -7,6 +7,7 @@ import { HiComponent } from './hi/hi.component';
 import { FormsModule } from '@angular/forms';
 import { ExampleLesson4Component } from './example-lesson4/example-lesson4.component';
 import { NgForExampleComponent } from './ng-for-example/ng-for-example.component';
+import { BoxComponentComponent } from './box-component/box-component.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgForExampleComponent } from './ng-for-example/ng-for-example.component
     HelloComponent,
     HiComponent,
     ExampleLesson4Component,
-    NgForExampleComponent
+    NgForExampleComponent,
+    BoxComponentComponent
   ],
   imports: [
     // Dùng FormsModule để thực hiện binding 2 chiều

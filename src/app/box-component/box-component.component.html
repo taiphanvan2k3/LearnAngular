@@ -1,0 +1,5 @@
+<!-- Khi thay đổi isWarning, isDanger ở AppModule thì do đã binding với các class của component này rồi
+nên khi thay đổi thì component này cũng nhận được sự thay đổi.  -->
+<div class="box" [class.red-border]="isDanger" [class.yellow-background]="isWarning"></div>
+<br />
+<div class="box" [class]="{'red-border':isDanger,'yellow-background':isWarning}"></div>
