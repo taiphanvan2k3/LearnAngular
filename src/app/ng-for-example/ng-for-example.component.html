@@ -1,0 +1,20 @@
+<ul>
+    <li *ngFor="let user of users; first as isFirst; last as isLast; index as index; count as count;
+    odd as isOdd; even as isEven">
+        <span>{{user.id}} {{user.name.toUpperCase()}} {{user.email}} at <b>Index {{index}} of
+                {{count-1}}</b><br /></span>
+        <span *ngIf="isFirst">This is the first item<br /></span>
+        <span *ngIf="isLast">This is the last item<br /></span>
+        <span *ngIf="isEven">This is an even item</span>
+        <span *ngIf="isOdd">This is an odd item</span>
+    </li>
+</ul>
+
+<ng-container *ngIf="tags.length > 0; else noTags;">
+    <button *ngFor="let button of tags; last as isLast; odd as isOdd" [class.margin-right]="!isLast"
+        [class.odd]="isOdd">{{button}}</button>
+</ng-container>
+
+<ng-template #noTags>
+    <p>Not exist tags</p>
+</ng-template>

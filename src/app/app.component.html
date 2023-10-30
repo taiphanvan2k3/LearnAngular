@@ -1,10 +1,1 @@
-<!-- Thực hiện binding giá trị của user.name vào thuộc tính name của component example-lesson4 -->
-<example-lesson4 [ngIf]="user.age >= 18" [name]="user.name"></example-lesson4>
-<ng-template #under18>
-    <p>You are too young to see this content</p>
-</ng-template>
-
-<!-- Thay vì tạo ra các hàm xử lí onclick thì viết trực tiếp vào đây vì code xử lí ngắn-->
-<button (click)="user.age = user.age - 1"> -</button>
-<span> Age: {{user.age}} </span>
-<button (click)="user.age = user.age + 1">+</button>
+<app-ng-for-example [users]="users" [tags]="tags"></app-ng-for-example>
