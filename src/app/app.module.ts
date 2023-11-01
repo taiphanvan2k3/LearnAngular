@@ -9,6 +9,8 @@ import { ExampleLesson4Component } from './example-lesson4/example-lesson4.compo
 import { NgForExampleComponent } from './ng-for-example/ng-for-example.component';
 import { BoxComponentComponent } from './box-component/box-component.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { AuthorListComponent } from './author-list/author-list.component';
+import { AuthorDetailComponent } from './author-detail/author-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     NgForExampleComponent,
     BoxComponentComponent,
     ProgressBarComponent,
+    AuthorListComponent,
+    AuthorDetailComponent,
   ],
   imports: [
     // Dùng FormsModule để thực hiện binding 2 chiều
