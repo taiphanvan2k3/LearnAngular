@@ -1,1 +1,11 @@
-<app-author-list></app-author-list>
+<app-toggle #toggleComponent [(checked)]="isChecked"></app-toggle>
+
+<!-- toggleComponent là instance của ToggleComponent -->
+<button (click)="toggleComponent.toggle()">Click me</button>
+
+<input #inputComponent type="text" value="Hello1" />
+<input #inputComponent_ type="text" value="Hello2" />
+<input #inputComponent_ type="text" value="Hello3" />
+<ng-container *ngIf="false">
+    <input #inputComponent_ type="text" value="Hello4" />
+</ng-container>
