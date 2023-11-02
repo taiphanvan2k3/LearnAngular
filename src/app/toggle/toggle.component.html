@@ -1,0 +1,9 @@
+<!-- Nếu dùng cách toggle() và ở app.component.html dùng [checked]="isChecked" thì đây chỉ mới down data
+do đó khi giá trị của checked trong app-toggle thay đổi nhưng trong app-module thì không. -->
+<!-- <div class="toggle-wrapper" [class.checked]="checked" (click)="toggle()">
+    <div class="toggle"></div>
+</div> -->
+
+<div class="toggle-wrapper" [class.checked]="checked" (click)="checkedChange.emit(!checked)">
+    <div class="toggle"></div>
+</div>
