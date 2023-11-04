@@ -12,6 +12,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { AuthorListComponent } from './author-list/author-list.component';
 import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { FlexComponentComponent } from './flex-component/flex-component.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ToggleComponent } from './toggle/toggle.component';
     AuthorListComponent,
     AuthorDetailComponent,
     ToggleComponent,
+    FlexComponentComponent,
   ],
   imports: [
     // Dùng FormsModule để thực hiện binding 2 chiều
